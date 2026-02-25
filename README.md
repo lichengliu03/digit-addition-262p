@@ -46,11 +46,11 @@ Building on [digit-addition-311p](https://github.com/rezabyt/digit-addition-311p
 
 The 274-parameter model exhibits **delayed grokking**: near-zero accuracy for ~38K steps, followed by a gradual rise to ~99% over 120K more steps. Two rounds of **iterative fine-tuning** with decreasing learning rates then close the remaining gap:
 
-| Stage | LR | Steps | Errors / 100K |
-|---|---|---|---|
-| Base training | 0.02 | 152K | ~160 |
-| Fine-tune 1 | 0.001 | 100K | 10 |
-| **Fine-tune 2** | **0.0003** | **50K** | **10** |
+| Stage | LR | Steps | Val Exact (5K) | Errors / 100K |
+|---|---|---|---|---|
+| Base training | 0.02 | 152K | 99.84% | — |
+| Fine-tune 1 | 0.001 | 100K | 100% | 10 |
+| **Fine-tune 2** | **0.0003** | **50K** | **100%** | **10** |
 
 ![Training curves](grokking_plot.png)
 

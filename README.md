@@ -62,6 +62,8 @@ The 262p model exhibits **delayed grokking**: near-zero accuracy for ~400K steps
 | 7, 13, 23, 37, 51, 77, 99, 123 | 0% | No learning |
 | **256** | **100%** | **Grokked at step 480K** |
 
+![Training curves](grokking_plot.png)
+
 ## Quick Start
 
 ### Install
